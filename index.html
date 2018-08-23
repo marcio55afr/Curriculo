@@ -1,0 +1,158 @@
+<DOCTYPE html>
+    <html lang="pt-br">
+  
+    <head>
+        <style>
+            body{
+                margin: 3% 15% 0 15%;
+                background-color: lightgray;
+            }
+            .Paper{
+                background-color: whitesmoke;
+                padding: 2% 5% 5% 5%;
+            }
+            .PersonalData{
+                width:max-content;
+                margin: auto;
+                box-align: center;
+                text-align: center;
+            }
+            .Header{
+                text-align: center;
+                background-color: darkslategray;
+                color: aliceblue;
+                padding: 3%;
+            }
+
+        </style>
+        <meta charset="UTF-8">
+        <title>Currículo</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    </head>
+  
+    <body style="font-family:Montserrat,sans-serif">
+  
+    <header class="Header">
+        <h1 style="font-size: 3em" > Currículum </h1>
+    </header>
+    <div class="Paper">
+
+        <form style="border: 1px;border-style:solid">
+            <label for="user">Nome:</label>
+            <input type="text" name="user" placeholder="Digite seu nome"> <br>
+            <input style="margin-top: 20px" type="radio" name="sexo" value="masculino">
+            <label for="sexo">Masculino</label>
+            <input style="margin-top: 20px" type="radio" name="sexo" value="feminino"> 
+            <label for="sexo">Feminino</label> <br>
+            
+            <input style="margin-top: 20px" type="radio" name="titulo" value="professor">
+            <label for="sexo">Professor</label>
+            <input type="radio" name="titulo" value="aluno">
+            <label for="sexo">Aluno</label> <br>
+
+            <div style="width: 100px;margin-top: 20px;">
+            <label for="sexo">Segunda</label>
+            <input style="float: right" type="checkbox" name="diasDeEstudo[]" value="seg">  <br>
+            <label for="sexo">Terça</label>
+            <input style="float: right"  type="checkbox" name="diasDeEstudo[]" value="ter">  <br>
+            <label for="sexo">Quarta</label>
+            <input style="float: right"  type="checkbox" name="diasDeEstudo[]" value="qua"> <br>
+            <label for="sexo">Quinta</label>
+            <input style="float: right"  type="checkbox" name="diasDeEstudo[]" value="qui">  <br>
+            <label for="sexo">Sexta</label>
+            <input style="float: right"  type="checkbox" name="diasDeEstudo[]" value="sex">  <br>
+            <label for="sexo">Sabado</label>
+            <input style="float: right"  type="checkbox" name="diasDeEstudo[]" value="sab">  <br>
+            </div>
+            
+            <input style="margin-top: 10px" type="submit" value="Clique aqui!">
+        </form>
+
+        <div style="border: 1px;border-style:solid">
+        <form >
+
+                <label for="imovel">Tipo do Imóvel:</label>
+                <select name="imovel">
+                    <option value="0">Casa</option>
+                    <option value="1">Apartamento</option>
+                </select> <br>
+
+
+                <label for="data">Data de Construção:</label>
+                <input style="margin-top: 20px" type="date" name="data" placeholder="dd/mm/aaaa"> <br>
+
+                <input style="margin-top: 20px" type="radio" name="tipoImovel" value="novo">
+                <label for="tipoImovel">Imovel Novo</label>
+                <input style="margin-top: 20px" type="radio" name="tipoImovel" value="usado"> 
+                <label for="tipoImovel">Imovel Usado</label> <br>
+
+                <label for="endereco">Endereço:</label>
+                <input style="margin-top: 20px"  type="text" name="endereco"> <br>
+
+                <label  for="descricao">Descrição:</label>
+                <input style="margin-top: 20px"  type="text" name="descricao"> <br>
+                
+                <input style="margin-top: 10px" type="submit" value="Clique aqui!">
+            </form>
+        </div>
+        
+        <div id="nome-foto" class="PersonalData">
+            <h1>Dados Pessoais</h1>
+            <p>Márcio Antônio de Freitas Júnior</p>
+            <p>Brasileiro - 20 anos - Solteiro Uberlândia · Minas Gerais</p>
+            <p>Rua Euclides Ferreira Tavares- JD Califórnia</p>
+            <p>marcio55afr@gmail.com	34 99862-2909</p>
+
+
+            <table>
+            <tr>
+                <td>
+                <img src="">
+                </td>
+                <td>
+                Márcio Antônio..
+                </td>
+            </tr>
+            </table>
+        </div>
+        
+        <hr>
+    
+        <div id="dados-pessoais">
+            <p>Brasileiro</p>
+            <p>21 anos</p>
+        </div>
+    
+        <div id="formacao-academica">
+            <h1>Formação Acadêmica</h1>
+            <ul>
+            <li>Cursando Ciência da Computação</li>
+            <li>Universidade Federal de Uberlândia</li>
+            <li></li>
+            </ul>
+        </div>
+    
+        <div>
+            2014 - 2015: Martins Comércio e Serviços de Distribuição S/A
+    Cargo: Aprendiz Profissional Comercial em Serviços Administrativos
+    Principais Atividades: correção de endereços dos clientes do site eFácil, preenchimento de planilha de entregas, entre outras.
+    2017: Escola de Educação Básica da Universidade Federal de Uberlândia (ESEBA) Cargo: Estagiário – Laboratório de Informática.
+    Principais Atividades: configuração e manutenção da rede local, suporte técnico à comunidade ESEBA, configuração de computadores, entre outras.
+    2018: Cedro Technologies
+    Cargo: Estagiário em desenvolvimento web backend e front-end
+    Principais Atividades: Desenvolvimento de API's utilizando a plataforma .NET, desenvolvimento de components e modais em AngularJs e correções de erros e bugs de código.
+        </div>
+    
+        <div>
+        </div>
+        Inglês Intermediário;
+        Conhecimentos básicos em HTML5, CSS, Bootstrap, JavaScript, AngularJs, Microsoft .NET, MYSQL, Git, Entity framework, JSON, programação funcional e programação lógica;
+        Conhecimentos intermediários em JAVA, C ,Python, programação orientado a objetos e programação procedural.
+        Ferramentas já utilizadas: Redmine, Bitbucket, Github, Visual Studio, Postman;
+        Participação no Programa de Iniciação Científica Júnior com bolsa do CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico) - 2012 e 2014;
+        Publicação de Artigo: Vida Artificial: do Aleatório ao Específico, 2017, 4a edição TechWeek FACOM / UFU. Autores: Márcio Antônio de Freitas Júnior e Vinícius Scavoni de Lima. Orientador: Professor Doutor Ivan Sendin;
+        Medalhista da Olimpíada Brasileira de Matemática de Escolas Públicas (OBMEP) nos anos: 2011, 2013 e 2014;
+    </div>  
+      
+      
+    </body>
